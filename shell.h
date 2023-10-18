@@ -7,18 +7,22 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 
+#define __silent __attribute__((__unused__))
+
 /***** STRUCTURES *****/
 
 /**
  * struct info- struct for the shell data
  * @program_name: the name of the executable
+ * @params: number of args passed.
  */
 typedef struct info
 {
 	char *program_name;
+	int params;
 } shell_data;
 
-void init(int argc, char *argv[], char *env[], shell_data *data);
+void init(int argc, char *argv[], shell_data *data);
 
 /* Output functions */
 int _print(char *string);

@@ -8,12 +8,13 @@ int show_prompt(shell_data *data)
 {
 	char *command = NULL;
 	size_t bufsize = 0;
+	ssize_t bytes_read;
 
 	while (1)
 	{
 		_print("$ ");
 
-		ssize_t bytes_read = getline(&command, &bufsize, stdin);
+		bytes_read = getline(&command, &bufsize, stdin);
 
 		if (bytes_read == EOF)
 		{
