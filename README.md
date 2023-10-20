@@ -1,3 +1,4 @@
-# Simple Shell Project by: 
-## Awab Omer
-## Shakir Abdo
+# Simple Shell Project by:
+
+### Awab Omer
+### Shakir Abdo
